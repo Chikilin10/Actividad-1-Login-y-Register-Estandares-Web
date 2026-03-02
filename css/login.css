@@ -8,14 +8,132 @@
 }
 
 :root{
-    
+    --bg-color: #233D4D;
+    --title: #FCCA46;
+    --text-color:#fff ;
+    --buttons: #FE7F2D;
+    --button-hover: #dd6d23;
+    --focus: #FCCA46;
+    --extra-1: #A1C181;
+    --extra-2: #619B8A;
 }
 
+/* CAMBIAR EL FONDO POR UNA IMAGEN, CYBERPUNK CITY */
 
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--color-primario);
+    background: var(--bg-color);
+}
+
+.contenedorPrincipal{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.contenedorPrincipal h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.contenedorPrincipal .entradas{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg-color);
+    margin: 30px 0;
+}
+
+.entradas input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--button-hover);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 20px 40px 20px 20px;
+}
+
+.entradas input::placeholder{
+    color: var(--text-color);
+}
+
+.entradas i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.contenedorPrincipal .recordar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0px 15px 0px;
+    color: var(--text-color);
+}
+
+.recordar label input{
+    accent-color: var(--text-color);
+    margin-right: 3px;
+}
+
+.recordar a{
+    color: var(--extra-2);
+    text-decoration: none;
+}
+
+.recordar a:hover{
+    text-decoration: underline;
+}
+
+.contenedorPrincipal .loginBtn{
+    width: 100%;
+    height: 45px;
+    background: var(--buttons);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contenedorPrincipal .loginBtn:hover{
+    box-shadow: 0 0 1rem var(--bg-color);
+    background: var(--bg-color);
+    color: var(--extra-2);
+    transform: scale(1.1) translateY(-5px);
+    border: 0.2px solid var(--text-color);
+}
+
+.contenedorPrincipal .registrarse{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.registrarse p a{
+    color: var(--extra-2);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrarse p a:hover{
+    text-decoration: underline;
 }
