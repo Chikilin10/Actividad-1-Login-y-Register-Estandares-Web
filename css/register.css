@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #233D4D;
+    --title: #FCCA46;
+    --text-color:#fff ;
+    --buttons: #FE7F2D;
+    --button-hover: #dd6d23;
+    --focus: #FCCA46;
+    --extra-1: #A1C181;
+    --extra-2: #619B8A;
+}
+
+/* CAMBIAR EL FONDO POR UNA IMAGEN, CYBERPUNK CITY */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: no-repeat url(../images/background.png);
+    background-size: cover;
+}
+
+.contenedorPrincipal{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.contenedorPrincipal h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+/* PROVICIONAL PARA EL REGISTRO */
+
+.formRegister{
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .entradas{
+    flex: 1;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/*PROVISIONAL PARA EL REGISTRO*/
+
+.contenedorPrincipal .entradas{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.entradas input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--extra-2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 20px 40px 20px 20px;
+}
+
+.entradas input::placeholder{
+    color: var(--text-color);
+}
+
+.entradas i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.contenedorPrincipal .fila {
+    display: flex;
+    gap: 10px;
+}
+
+.contenedorPrincipal .fila select{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid var(--extra-2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--text-color);
+    align-items: center;
+    padding: 11px 11px 11px 11px;
+    margin: 10px 0px 10px 0px;
+}
+
+.contenedorPrincipal .fila select option{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.contenedorPrincipal .recordar{
+    font-size: 14.5px;
+    margin: 10px 0px 10px 0px;
+    color: var(--text-color);
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.recordar label{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0px 0px 10px 20px;
+}
+
+
+.recordar label input{
+    accent-color: var(--text-color);
+}
+
+.recordar a{
+    color: var(--extra-2);
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px 7px 20px;
+}
+
+.recordar a:hover{
+    text-decoration: underline;
+}
+
+.contenedorPrincipal .loginBtn{
+    width: 100%;
+    height: 45px;
+    background: var(--extra-2);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contenedorPrincipal .loginBtn:hover{
+    box-shadow: 0 0 1rem var(--bg-color);
+    background: var(--bg-color);
+    color: var(--extra-2);
+    transform: scale(1.1) translateY(-5px);
+    border: 0.01px solid var(--text-color);
+}
+
+.contenedorPrincipal .registrarse{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registrarse p a{
+    color: var(--extra-2);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrarse p a:hover{
+    text-decoration: underline;
+}

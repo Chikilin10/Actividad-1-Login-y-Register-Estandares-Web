@@ -25,7 +25,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--bg-color);
+    background: no-repeat url(../images/background.png);
+    background-size: cover;
 }
 
 .contenedorPrincipal{
@@ -48,8 +49,7 @@ body{
     position: relative;
     width: 100%;
     height: 50px;
-    background-color: var(--bg-color);
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .entradas input{
@@ -58,7 +58,7 @@ body{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid var(--button-hover);
+    border: 2px solid var(--extra-2);
     border-radius: 40px;
     font-size: 16px;
     color: var(--text-color);
@@ -78,21 +78,35 @@ body{
 }
 
 .contenedorPrincipal .recordar{
-    display: flex;
-    justify-content: space-between;
     font-size: 14.5px;
-    margin: 15px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
     color: var(--text-color);
+    text-align: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.recordar label{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0px 0px 10px 20px;
+}
+
 
 .recordar label input{
     accent-color: var(--text-color);
-    margin-right: 3px;
 }
 
 .recordar a{
     color: var(--extra-2);
     text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0px 7px 20px;
 }
 
 .recordar a:hover{
@@ -102,7 +116,7 @@ body{
 .contenedorPrincipal .loginBtn{
     width: 100%;
     height: 45px;
-    background: var(--buttons);
+    background: var(--extra-2);
     border: none;
     outline: none;
     border-radius: 40px;
@@ -118,14 +132,13 @@ body{
     background: var(--bg-color);
     color: var(--extra-2);
     transform: scale(1.1) translateY(-5px);
-    border: 0.2px solid var(--text-color);
+    border: 0.01px solid var(--text-color);
 }
 
 .contenedorPrincipal .registrarse{
     font-size: 15px;
     text-align: center;
     margin: 20px 0 15px;
-
 }
 
 .registrarse p a{
